@@ -136,3 +136,12 @@ table.striped > tbody > tr:nth-child(odd) {
   display: table;
   width: 100%;
 }
+
+
+
+
+
+// Style for toggles in edit mode
+.panel.add, .panel.edit {
+  display: none;
+}

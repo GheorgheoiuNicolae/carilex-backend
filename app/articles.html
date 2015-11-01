@@ -11,6 +11,7 @@
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.css">
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -88,14 +89,14 @@
               <i class="material-icons left red-text">clear</i>
               <span class="left">Hide the news page</span>
             </a>
-            <a href="#" class="left green btn waves-effect">
+            <a href="#" class="left green btn waves-effect add-new">
               <i class="material-icons left">add</i>
               <span class="left">New</span>
             </a>
           </div>
 
           <!-- panel -->
-          <div class="col m12 panel">
+          <div class="col m12 panel list">
             <div class="card lighten-5">
               <div class="card-content">
                 <p class="card-title ">Article list</p>
@@ -119,7 +120,7 @@
                           <a href="#confirm" class="right round btn waves-effect red modal-trigger">
                             <i class="material-icons left">clear</i>
                           </a>
-                          <a href="#" class="right round btn waves-effect orange">
+                          <a href="#" class="right round btn waves-effect orange edit">
                             <i class="material-icons left">create</i>
                           </a>
                         </td>
@@ -132,7 +133,7 @@
                           <a href="#confirm" class="right round btn waves-effect red modal-trigger">
                             <i class="material-icons left">clear</i>
                           </a>
-                          <a href="#" class="right round btn waves-effect orange">
+                          <a href="#" class="right round btn waves-effect orange edit">
                             <i class="material-icons left">create</i>
                           </a>
                         </td>
@@ -145,7 +146,7 @@
                           <a href="#confirm" class="right round btn waves-effect red modal-trigger">
                             <i class="material-icons left">clear</i>
                           </a>
-                          <a href="#" class="right round btn waves-effect orange">
+                          <a href="#" class="right round btn waves-effect orange edit">
                             <i class="material-icons left">create</i>
                           </a>
                         </td>
@@ -158,7 +159,7 @@
                           <a href="#confirm" class="right round btn waves-effect red modal-trigger">
                             <i class="material-icons left">clear</i>
                           </a>
-                          <a href="#" class="right round btn waves-effect orange">
+                          <a href="#" class="right round btn waves-effect orange edit">
                             <i class="material-icons left">create</i>
                           </a>
                         </td>
@@ -171,7 +172,7 @@
                           <a href="#confirm" class="right round btn waves-effect red modal-trigger">
                             <i class="material-icons left">clear</i>
                           </a>
-                          <a href="#" class="right round btn waves-effect orange">
+                          <a href="#" class="right round btn waves-effect orange edit">
                             <i class="material-icons left">create</i>
                           </a>
                         </td>
@@ -184,7 +185,7 @@
                           <a href="#confirm" class="right round btn waves-effect red modal-trigger">
                             <i class="material-icons left">clear</i>
                           </a>
-                          <a href="#" class="right round btn waves-effect orange">
+                          <a href="#" class="right round btn waves-effect orange edit">
                             <i class="material-icons left">create</i>
                           </a>
                         </td>
@@ -197,7 +198,7 @@
                           <a href="#confirm" class="right round btn waves-effect red modal-trigger">
                             <i class="material-icons left">clear</i>
                           </a>
-                          <a href="#" class="right round btn waves-effect orange">
+                          <a href="#" class="right round btn waves-effect orange edit">
                             <i class="material-icons left">create</i>
                           </a>
                         </td>
@@ -210,7 +211,7 @@
                           <a href="#confirm" class="right round btn waves-effect red modal-trigger">
                             <i class="material-icons left">clear</i>
                           </a>
-                          <a href="#" class="right round btn waves-effect orange">
+                          <a href="#" class="right round btn waves-effect orange edit">
                             <i class="material-icons left">create</i>
                           </a>
                         </td>
@@ -223,7 +224,7 @@
             </div>
           </div><!-- panel -->
 
-          <div class="col m12 panel">
+          <div class="col m12 panel add edit">
             <div class="card lighten-5 create-article">
               <div class="card-content">
                 <p class="card-title ">New article</p>
@@ -276,7 +277,11 @@
                     <!-- language tabs END -->
 
                   <div class="input-field col s12">
-                    <a href="" class="btn waves-effect green">Submit</a>
+                    <a href="" class="btn waves-effect right green">Submit</a>
+                    <a href="#" class="left red btn waves-effect cancel">
+                      <i class="material-icons left">close</i>
+                      <span class="left">Cancel</span>
+                    </a>
                   </div>
 
                 </div>
@@ -305,16 +310,12 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/Materialize/dist/js/materialize.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-    <script>
-         $(document).ready(function() {
-        $('select').material_select();
-      });
-    </script>
   </body>
 </html>
